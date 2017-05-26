@@ -29,3 +29,29 @@ dependencies {
 //    compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
 }
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'shellCommand'
+
+    publishedGroupId = 'com.zyhang'
+    artifact = 'shellCommand'
+
+    siteUrl = 'https://github.com/yuhangjiayou/ShellCommand'
+    gitUrl = 'https://github.com/yuhangjiayou/ShellCommand.git'
+
+    libraryVersion = '1.0.0'
+    libraryName = 'shellCommand'
+    libraryDescription = 'help run shell command in app'
+
+    developerId = 'zyhang'
+    developerName = 'zyhang'
+    developerEmail = 'zyhang4502@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from:'../gradle/install.gradle'
+apply from:'../gradle/bintray.gradle'
