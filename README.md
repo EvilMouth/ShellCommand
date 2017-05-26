@@ -6,3 +6,8 @@
 ```
 compile 'com.zyhang:shellCommand:1.0.0'
 ```
+
+## Usage
+```
+CommandResult result = ShellCommand.exec("monkey -vvv 1000",true,true);
+```
