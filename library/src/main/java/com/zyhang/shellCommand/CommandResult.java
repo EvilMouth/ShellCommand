@@ -30,6 +30,33 @@ public class CommandResult {
         this.errorMsg = errorMsg;
     }
 
+    public int getResultCode() {
+        return resultCode;
+    }
+
+    public CommandResult setResultCode(int resultCode) {
+        this.resultCode = resultCode;
+        return this;
+    }
+
+    public String getSuccessMsg() {
+        return successMsg;
+    }
+
+    public CommandResult setSuccessMsg(String successMsg) {
+        this.successMsg = successMsg;
+        return this;
+    }
+
+    public String getErrorMsg() {
+        return errorMsg;
+    }
+
+    public CommandResult setErrorMsg(String errorMsg) {
+        this.errorMsg = errorMsg;
+        return this;
+    }
+
     @Override
     public String toString() {
         return "CommandResult{" + "resultCode=" + resultCode +
