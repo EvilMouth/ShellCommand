@@ -1,1 +1,1 @@
-include ':shellcommand', ':app'
+include ':shellCommand', ':app'

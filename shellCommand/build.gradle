@@ -6,26 +6,11 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
     }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    testImplementation 'junit:junit:4.12'
 }
 
 ext {
@@ -38,7 +23,7 @@ ext {
     siteUrl = 'https://github.com/izyhang/ShellCommand'
     gitUrl = 'https://github.com/izyhang/ShellCommand.git'
 
-    libraryVersion = '1.1.0'
+    libraryVersion = '1.2.0'
     libraryName = 'shellCommand'
     libraryDescription = 'help run shell command in app'
 
