@@ -4,7 +4,7 @@
 
 ## Installation
 ```
-compile 'com.zyhang:shellCommand:1.0.0'
+compile 'com.zyhang:shellCommand:1.1.0'
 ```
 
 ## Usage
